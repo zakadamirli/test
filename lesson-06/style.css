@@ -1,0 +1,90 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+span{
+    color: rgb(124, 6, 226);
+}
+/* header{
+    background-color: red;
+} */
+/* class selector */
+.header{
+background-color: blue;
+}
+
+.card{
+    background-color: rgb(34, 150, 150);
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+.card >h3 {
+ font-size: 30px;
+font-weight: 700;
+margin: 0;
+}
+.card >p {
+    margin: 0;
+
+}
+.card >p > span{
+    font-weight:700;
+    color: brown;
+}
+[title] {
+    /* color: rgb(245, 192, 0); */
+   text-decoration: line-through;
+}
+
+/* istenilen attribute select etmek olur */
+/* [class]{
+    background-color: brown;
+} */    
+
+[data-status="success"]{
+    background-color: green;
+}
+[data-status="failed"]{
+    background-color: rgb(128, 21, 0);
+}
+[data-status="progres"]{
+    background-color: rgb(26, 0, 128);
+}
+
+input[type="number"]{
+    background-color: aqua;
+    color: rgb(124, 6, 226);
+}
+input[type="text"]{
+    background-color: rgb(255, 47, 0);
+    color: rgb(0, 0, 0);
+}
+input[type="text"]::placeholder{
+    color:rgb(234, 234, 234) ;
+}
+/* : 1 qosha notle ile olanlar PSEUDO class lar olacaq */
+/* :: 2 qosa noqte ile olanlar PSEUDO element */
+
+.card{
+    position: relative;
+}
+.card::after{
+    content: 'after';
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+a:active{
+    background-color: aquamarine;
+
+}
+span{
+        font-size: smaller;
+}
+
+button:disabled{
+    background-color: red;
+}
